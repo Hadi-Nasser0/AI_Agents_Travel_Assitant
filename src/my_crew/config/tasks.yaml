@@ -1,0 +1,41 @@
+find_flight:
+  description: >
+    Find the best dummy flights to {destination}
+  expected_output: >
+    A list of 2 dummy flights with airline, price, and duration.
+  agent: flight_agent
+
+find_hotel:
+  description: >
+    Suggest 2 dummy hotels in {destination}
+  expected_output: >
+    A list of 2 dummy hotels with name, location, price_per_night, rating, and amenities.
+  agent: hotel_agent
+
+plan_itinerary:
+  description: >  
+    Prepare a 3-day itinerary for a trip to {destination}
+  expected_output: >
+    A detailed 3-day itinerary including activities, accommodations, and dining options.
+  agent: tour_agent
+
+give_advice:
+  description: >    
+    Give 3 important pieces of advice to tourists visiting {destination}
+  expected_output: >
+    A list of 3 pieces of advice, each with a title and description.
+  agent: advice_agent
+
+get_user_input:
+  description: >
+    Gather user preferences for the trip to {destination}
+  expected_output: >
+    A summary of user preferences including destination, travel dates, budget, interests, and special requirements.
+  agent: coordination_agent  
+
+compile_report:
+  description: >
+    Compile all gathered information into a comprehensive travel plan for {destination}
+  expected_output: >
+    A well-structured travel plan document including flights, hotel options, itinerary, and advice.
+  agent: coordination_agent
